@@ -9,7 +9,7 @@ Script to create PDF file covers using a LaTeX template and Python from a JSON.
 
 #### How it works?
 
-`cover_template.tex` plays as a template using tokenized variables like `$variable` which will be replaced by the data set in the JSON file.
+`cover_template.tex` plays as a template using **tokenized variables** like `$variable` which will be replaced by the data set in the JSON file.
 
 *Tokenized variable in the LaTeX template:*
 
