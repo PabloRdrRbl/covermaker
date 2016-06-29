@@ -1,0 +1,25 @@
+{
+"covers":
+[
+{
+"university" : "Universidad de León",
+"subject" : "Propulsión",
+"document" : "Apuntes de clase",
+"title" : "Apuntes de Propulsión",
+"name" : "Lucía",
+"surname" : "Placer López",
+"email" : "lplacl00@estudiantes.unileon.es",
+"date" : "28 de junio de 2016"
+},
+{
+"university" : "Technische Univesität München",
+"subject" : "Flugsystemdynamik 1",
+"document" : "Lehrstuhls für Flugsystemdynamik (FSD)",
+"title" : "Flight System Dynamics 1 notes",
+"name" : "Pablo",
+"surname" : "Rodríguez Robles",
+"email" : "prodrr05@estudiantes.unileon.es",
+"date" : "21. September 2016"
+}
+]
+}
