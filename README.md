@@ -7,7 +7,7 @@ Script to create PDF file covers using a LaTeX template and Python from a JSON.
 * **Python**: This project uses only the Python Standard Libary (tested on `Python >= 3.4`).
 * **Others**: `covermaker.py` needs to have `pdflatex` installed. `pdflatex` is included in the [TeX Live](http://tug.org/texlive/) LaTeX distribution.
 
-#### How it works?
+#### How do it works?
 
 `cover_template.tex` plays as a template using **tokenized variables** like `$variable` which will be replaced by the data set in the JSON file.
 
@@ -17,7 +17,7 @@ Script to create PDF file covers using a LaTeX template and Python from a JSON.
 \textsc{\LARGE $university} % Name of your university/college
 ```
 
-Thanks to Python's **Template strings** (see the [docs](https://docs.python.org/release/3.5.2/library/string.html#template-strings) and the [PEP 292](https://www.python.org/dev/peps/pep-0292/)) the scrip replaces the `$variable` with the dictionary (when JSON is loaded) value asigned to the `"variable"` dictiorary key.
+Thanks to Python's **Template strings** (see the [docs](https://docs.python.org/release/3.5.2/library/string.html#template-strings) and the [PEP 292](https://www.python.org/dev/peps/pep-0292/)) the scrip replaces the `$variable` with the dictionary (when JSON is loaded) value asigned to the `"variable"` dictionary key.
 
 *JSON object example:*
 
@@ -41,7 +41,7 @@ for cover in data["covers"]:
       create(cover)
 ```
 
-*Creating template and substituding:*
+*Creating template and substituting:*
 
 ```python
 # This code is inside the create() function
