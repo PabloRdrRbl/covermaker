@@ -4,6 +4,16 @@ import os
 
 
 def create(cover, n, debug=False):
+    """
+    Takes a JSON object and replaces all the variables in the
+    LaTeX template. Then it calls pdflatex via subprocess and
+    creates the PDF conver from the .tex file.
+
+    cover --> JSON object
+    n ------> Used to name all the outputs
+    debug --> Toogles the debug flags
+    """
+
     # We replace '_' by '\_' because of LaTeX does not recognize
     # the underscore as a character.
     # [http://texblog.net/latex-archive/uncategorized/symbols/]
@@ -53,6 +63,8 @@ if __name__ == '__main__':
     import json
     import os, shutil
 
+    # Loads the JSON array, which contains the different
+    # cover objects
     data = json.loads(open('covers.json').read())
 
     # Removing previus content in the directory output
@@ -66,6 +78,7 @@ if __name__ == '__main__':
                   "Content in the 'output' folder will be removed.\n" +
                   "Type something to continue: ")
 
+    # Removes all the files whitin the indicated directory
     # Taken from:
     # [http://stackoverflow.com/a/185941]
     #
