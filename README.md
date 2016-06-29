@@ -7,7 +7,7 @@ Script to create PDF file covers using a LaTeX template and Python from a JSON.
 * **Python**: This project uses only the Python Standard Libary (tested on `Python >= 3.4`).
 * **Others**: `covermaker.py` needs to have `pdflatex` installed. `pdflatex` is included in the [TeX Live](http://tug.org/texlive/) LaTeX distribution.
 
-#### How do it works?
+#### How does it works?
 
 `cover_template.tex` plays as a template using **tokenized variables** like `$variable` which will be replaced by the data set in the JSON file.
 
